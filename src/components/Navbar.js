@@ -1,4 +1,5 @@
-import { IconCodeCircle2 } from "@tabler/icons-react";
+// import { IconCodeCircle2 } from "@tabler/icons-react";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -8,7 +9,16 @@ export default function Navbar() {
           href="#"
           className="flex gap-2 items-center text-2xl font-bold text-blue-600"
         >
-          <IconCodeCircle2 size={40} />
+          <Image
+            src="/DevCodeNews-logo.png"
+            width={40}
+            height={40}
+            alt="Logotipo do site"
+          />
+          {/* <IconCodeCircle2
+            size={80}
+            className="bg-blue-600 text-white p-3 rounded-md"
+          /> */}
           DevScopeNews
         </a>
         <div>
