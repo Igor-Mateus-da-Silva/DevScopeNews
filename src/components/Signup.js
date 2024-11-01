@@ -14,7 +14,7 @@ export default function Signup() {
   };
 
   return (
-    <section id="signup" className="bg-gray-100 py-20">
+    <section id="signup" className="bg-gray-100 py-20 px-3">
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-4 text-blue-600">
           Cadastre-se gratuitamente
