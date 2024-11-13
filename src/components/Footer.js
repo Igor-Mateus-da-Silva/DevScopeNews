@@ -1,6 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import {
+  ImInstagram,
+  ImWhatsapp,
+  ImTwitter,
+  ImMail,
+  ImPhone,
+} from "react-icons/im";
 
 export default function Footer() {
   return (
@@ -9,33 +16,32 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-justify">
             <h5 className="font-semibold">DevScopeNews</h5>
-            <p className="mt-3 text-sm">
+            <p className="mt-1 text-sm">
               tudo que você precisa saber sobre o mundo tech & dev para
               manter-se informado
             </p>
+            <h5 className="font-semibold mt-3">Entre em contato</h5>
+            <div className="flex gap-4" id="contact">
+              <span className="flex gap-1 items-center">
+                <ImMail size={15} /> contato@contato.com
+              </span>
+              <span className="flex gap-1 items-center">
+                <ImPhone size={15} />
+                (00) 00000-0000
+              </span>
+            </div>
           </div>
           <div className="" id="social">
             <h5 className="font-semibold">Siga nossas redes Sociais!</h5>
-            <div className="mt-5 text-sm">
-              <Link
-                href="#social"
-                className="bg-rose-700 hover:bg-rose-400 text-white p-2 rounded-xl"
-              >
-                Instagram
+            <div className="mt-3 flex gap-8 justify-center items-center">
+              <Link className="hover:text-blue-500" href="#social">
+                <ImInstagram size={30} />
               </Link>
-              {" - "}
-              <Link
-                href="#social"
-                className="bg-blue-400 hover:bg-blue-800 text-white p-2 rounded-xl"
-              >
-                X (Twitter)
+              <Link className="hover:text-blue-500" href="#social">
+                <ImWhatsapp size={30} />
               </Link>
-              {" - "}
-              <Link
-                href="#social"
-                className="bg-emerald-500 hover:bg-emerald-900 text-white p-2 rounded-xl"
-              >
-                Whatsapp
+              <Link className="hover:text-blue-500" href="#social">
+                <ImTwitter size={30} />
               </Link>
             </div>
           </div>

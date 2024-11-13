@@ -28,7 +28,7 @@ export default function Navbar() {
           >
             Features
           </a>
-          <a href="#" className="text-gray-700 hover:text-blue-600 mx-4">
+          <a href="#contact" className="text-gray-700 hover:text-blue-600 mx-4">
             Contato
           </a>
           <a href="#signup" className="text-gray-700 hover:text-blue-600 mx-4">
