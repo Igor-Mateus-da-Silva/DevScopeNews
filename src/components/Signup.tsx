@@ -5,7 +5,7 @@ export default function Signup() {
   const [email, setEmail] = useState("");
   const [successMessage, setSuccessMessage] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     if (email) {
       setSuccessMessage(true);

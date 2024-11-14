@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function LatestPosts({ posts }) {
+interface Post {
+  id: number;
+  title: string;
+  image: string;
+}
+
+export default function LatestPosts({ posts }: { posts: Post[] }) {
   return (
     <section className="py-12 px-3 bg-gray-50">
       <div className="container mx-auto text-center">
