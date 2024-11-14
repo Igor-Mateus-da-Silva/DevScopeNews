@@ -8,6 +8,7 @@ import {
   ImMail,
   ImPhone,
 } from "react-icons/im";
+import { TbCodeCircle } from "react-icons/tb";
 
 export default function Footer() {
   return (
@@ -15,7 +16,10 @@ export default function Footer() {
       <div className="container mx-auto text-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-justify">
-            <h5 className="font-semibold">DevScopeNews</h5>
+            <div className="flex gap-2 items-center">
+              <TbCodeCircle size={30} className="bg-blue-600 p-1 rounded-md" />
+              <h5 className="font-semibold text-white">DevScopeNews</h5>
+            </div>
             <p className="mt-1 text-sm">
               tudo que você precisa saber sobre o mundo tech & dev para
               manter-se informado
@@ -63,7 +67,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <p className="mt-10">
+        <p className="mt-10 text-sm">
           &copy; {new Date().getFullYear()} DevScope News. Todos os direitos
           reservados.
         </p>

@@ -1,5 +1,4 @@
-// import { IconCodeCircle2 } from "@tabler/icons-react";
-import Image from "next/image";
+import { TbCodeCircle2 } from "react-icons/tb";
 
 export default function Navbar() {
   return (
@@ -9,16 +8,10 @@ export default function Navbar() {
           href="#"
           className="flex gap-2 items-center text-2xl font-bold text-blue-600"
         >
-          <Image
-            src="/DevCodeNews-logo.png"
-            width={40}
-            height={40}
-            alt="Logotipo do site"
+          <TbCodeCircle2
+            size={40}
+            className="bg-blue-600 text-white p-1 rounded-md"
           />
-          {/* <IconCodeCircle2
-            size={80}
-            className="bg-blue-600 text-white p-3 rounded-md"
-          /> */}
           DevScopeNews
         </a>
         <div>
